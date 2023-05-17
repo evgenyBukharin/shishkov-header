@@ -1,0 +1,9 @@
+.burger {
+	@include burger;
+	--burger-width: 33px;
+	--burger-height: 20px;
+	--burger-line-height: 1px;
+	&__line {
+		transform: translate(0);
+	}
+}
