@@ -8,6 +8,17 @@
 	--light-grey-color: #eaeaea;
 	--blue-color: #007bff;
 }
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+	opacity: 1;
+}
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+	outline: red solid 2px;
+	outline-offset: 2px;
+}
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+	opacity: 0.4;
+	pointer-events: none;
+}
 @font-face {
 	font-family: Geometria;
 	src: url(../fonts/Geometria-Light.woff2) format("woff2");
@@ -396,6 +407,15 @@ html {
 	background: var(--black-color);
 	color: var(--white-color);
 }
+.button__primary-negative {
+	border: 1px solid var(--white-color);
+	color: var(--white-color);
+}
+.button__primary-negative:hover {
+	border-color: transparent;
+	background: var(--white-color);
+	color: var(--black-color);
+}
 .button__container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -411,6 +431,10 @@ html {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+}
+.button__container-negative {
+	padding: 8px;
+	background: var(--black-color);
 }
 .hero {
 	padding-top: 120px;
