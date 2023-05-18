@@ -111,6 +111,7 @@ const styles = () => {
 				isProd,
 				cleanCSS({
 					level: 2,
+					format: "beautify",
 				})
 			)
 		)
